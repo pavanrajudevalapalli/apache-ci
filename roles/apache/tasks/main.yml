@@ -1,0 +1,14 @@
+---
+# tasks file for apachei
+ - name: installing apache
+   yum: name=httpd state=present
+   notify: httpd restart
+
+
+ - name: running level start
+   command: chkconfig httpd on
+
+
+ - name: coping files
+   template: src=index.html dest=/var/www/html/index.html
+   notify: httpd restart

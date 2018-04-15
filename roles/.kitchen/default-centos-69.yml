@@ -1,0 +1,9 @@
+---
+username: kitchen
+ssh_key: "/root/ansible/playbook/roles/.kitchen/docker_id_rsa"
+image_id: 04db772360f5
+container_id: 1a9f20c40b2451b186d7098c017910fa21b5614c3da376e2e38ba1a2075830cb
+hostname: localhost
+port: 32768
+last_action: converge
+last_error: 
